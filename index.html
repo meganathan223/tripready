@@ -83,6 +83,7 @@
           </label>
 
           <div class="filter__popup">
+            <h3>Filters</h3>
             <div class="price-section">
               <h4>Price Range</h4>
               <div class="price-section__container">
@@ -90,7 +91,9 @@
                 <span>to</span>
                 <input type="number" id="max-price" min="1000" max="50000" value="50000">
               </div>
-              <input type="range" id="price-slider" min="1000" max="50000" value="10000">
+              <input type="range" id="price-slider" min="1000" max="50000" value="10000"
+                oninput="amount.value = this.value">
+              <output id="amount">10000</output>
             </div>
 
             <div class="rating-section">
@@ -102,6 +105,9 @@
                 <label><input type="radio" name="rating" value="0" checked> All Ratings</label>
               </div>
             </div>
+
+            <button>Apply changes</button>
+            <button>Reset</button>
           </div>
 
         </div>
