@@ -351,5 +351,19 @@ body {
     left: auto;
   }
 
+  .destination__card,
+  .hotel__card,
+  .restaurant__card {
+    flex-basis: 40%;
+  }
 
+  .destination__container,
+  .hotel__container,
+  .restaurant__container {
+    height: 300px;
+  }
+
+  .footer {
+    margin-top: 3rem;
+  }
 }
