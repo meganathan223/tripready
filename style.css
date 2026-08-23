@@ -50,7 +50,8 @@ body {
   transition: .5s;
 }
 
-.navbar__s2 button {
+.navbar__s2 button,
+.navbar__s4 button {
   padding: 10px 15px;
   color: white;
   background-color: black;
@@ -61,13 +62,54 @@ body {
   font-size: 16px;
 }
 
-.navbar__s2 button:hover {
+.navbar__s2 button:hover,
+.navbar__s4 button:hover {
   background-color: blue;
 }
 
 .navbar__s4 {
   display: none;
 }
+
+.navbar__s4 {
+  position: relative;
+}
+
+.nav-menu {
+  position: absolute;
+  list-style: none;
+  text-decoration: none;
+  right: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 20px;
+  z-index: 1;
+  display: none;
+}
+
+.nav-menu button {
+  background-color: #00ac00;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navbar__s4 .navbar__s4__toggle {
+  width: 100%;
+  display: none;
+}
+
+.navbar__s4 .navbar__s4__toggle:checked~.nav-menu {
+  display: block;
+}
+
+
 
 .search {
   display: flex;
@@ -301,5 +343,6 @@ body {
     right: 100%;
     left: auto;
   }
+
 
 }
