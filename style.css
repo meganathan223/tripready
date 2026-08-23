@@ -297,4 +297,9 @@ body {
     font-size: 16px;
   }
 
+  .filter__popup {
+    right: 100%;
+    left: auto;
+  }
+
 }
