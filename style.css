@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: solid black 1px;
+}
+
+.navbar__s1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  background-image: linear-gradient(to right, #1000ec, #856bf7);
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar__s2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.navbar__s2 div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.navbar__s2 div:hover {
+  background-color: blue;
+  color: white;
+  transition: .5s;
+}
+
+.navbar__s2 button {
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: solid black 1px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navbar__s2 button:hover {
+  background-color: blue;
+}
+
+.search {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.search__bar {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: solid black 1px;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.search__bar input {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.search__bar input:focus {
+  outline: none;
+}
