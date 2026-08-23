@@ -257,13 +257,15 @@ body {
   justify-content: space-between;
   margin-top: 10px;
   flex-wrap: wrap;
+  height: 250px;
 }
 
 .destination__card,
 .hotel__card,
 .restaurant__card {
-  width: 350px;
-  padding: 10px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
 }
 
 .destination__card img,

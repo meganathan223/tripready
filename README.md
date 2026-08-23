@@ -10,5 +10,6 @@
 * Used CSS Media Queries for responsive design
 
 ## 📸 Preview
-![s1](./images/s1.png)
-![s2](./images/s2.png)
+<img src="./images/s1.png" alt="s1" width="70%">
+<img src="./images/s3.png" alt="s3" width="20%">
+<img src="./images/s2.png" alt="s2" width="70%">
