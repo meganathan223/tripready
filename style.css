@@ -139,6 +139,40 @@ body {
   height: 400px;
 }
 
+
+.destination,
+.hotel,
+.restaurant {
+  padding: 20px 10px;
+}
+
+.destination__container,
+.hotel__container,
+.restaurant__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.destination__card,
+.hotel__card,
+.restaurant__card {
+  width: 300px;
+  padding: 10px;
+}
+
+.destination__card img,
+.hotel__card img,
+.restaurant__card img {
+  width: 100%;
+  height: 50%;
+}
+
+
+
+
+
 /* Media Queries */
 
 @media screen and (max-width:800px) {
