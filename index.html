@@ -20,104 +20,102 @@
 </head>
 
 <body>
-  <header>
-    <!-- Navbar -->
-    <div class="navbar">
-      <div class="navbar__s1">
-        <span class="logo">
-          <i class="fa-solid fa-person-walking-luggage"></i>
-        </span>
-        <h1>Trip Ready</h1>
-      </div>
-
-      <div class="navbar__s2">
-        <div>
-          <i class="fa-solid fa-hotel"></i>
-          <p>Hotels</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-plane-departure"></i>
-          <p>Flights</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-utensils"></i>
-          <p>Restaurants</p>
-        </div>
-        <button>Sign in</button>
-        <button>Register</button>
-      </div>
-      <div class="navbar__s4">
-        <input type="checkbox" id="click-toggle" class="navbar__s4__toggle">
-        <label for="click-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <div class="nav-menu">
-          <ul>
-            <li>Hotels</li>
-            <li>Flights</li>
-            <li>Restaurants</li>
-            <li><button>Sign in</button></li>
-            <li><button>Register</button></li>
-          </ul>
-        </div>
-      </div>
-
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar__s1">
+      <span class="logo">
+        <i class="fa-solid fa-person-walking-luggage"></i>
+      </span>
+      <h1>Trip Ready</h1>
     </div>
 
-    <!-- Search section -->
-
-    <div class="search">
-      <div class="search__title">
-        <h1>Search your next stay hotels, restaurants </h1>
+    <div class="navbar__s2">
+      <div>
+        <i class="fa-solid fa-hotel"></i>
+        <p>Hotels</p>
       </div>
-      <div class="search__bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" placeholder="Search places, book Hotels, Flights and Restaurants" class="search__bar__one">
-        <button>Search</button>
+      <div>
+        <i class="fa-solid fa-plane-departure"></i>
+        <p>Flights</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-utensils"></i>
+        <p>Restaurants</p>
+      </div>
+      <button>Sign in</button>
+      <button>Register</button>
+    </div>
+    <div class="navbar__s4">
+      <input type="checkbox" id="click-toggle" class="navbar__s4__toggle">
+      <label for="click-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="nav-menu">
+        <ul>
+          <li>Hotels</li>
+          <li>Flights</li>
+          <li>Restaurants</li>
+          <li><button>Sign in</button></li>
+          <li><button>Register</button></li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="filter">
+  </div>
 
-          <input type="checkbox" id="click-toggle-filter" class="toggle-input">
-          <label for="click-toggle-filter" class="btn-style">
-            <i class="fa-solid fa-sliders"></i>
-          </label>
+  <!-- Search section -->
 
-          <div class="filter__popup">
-            <h3>Filters</h3>
-            <div class="price-section">
-              <h4>Price Range</h4>
-              <div class="price-section__container">
-                <input type="number" id="min-price" min="1000" max="50000" value="1000">
-                <span>to</span>
-                <input type="number" id="max-price" min="1000" max="50000" value="50000">
-              </div>
-              <input type="range" id="price-slider" min="1000" max="50000" value="10000"
-                oninput="amount.value = this.value">
-              <output id="amount">10000</output>
+  <div class="search">
+    <div class="search__title">
+      <h1>Search your next stay hotels, restaurants </h1>
+    </div>
+    <div class="search__bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" placeholder="Search places, book Hotels, Flights and Restaurants" class="search__bar__one">
+      <button>Search</button>
+
+      <div class="filter">
+
+        <input type="checkbox" id="click-toggle-filter" class="toggle-input">
+        <label for="click-toggle-filter" class="btn-style">
+          <i class="fa-solid fa-sliders"></i>
+        </label>
+
+        <div class="filter__popup">
+          <h3>Filters</h3>
+          <div class="price-section">
+            <h4>Price Range</h4>
+            <div class="price-section__container">
+              <input type="number" id="min-price" min="1000" max="50000" value="1000">
+              <span>to</span>
+              <input type="number" id="max-price" min="1000" max="50000" value="50000">
             </div>
-
-            <div class="rating-section">
-              <h4>Minimum Rating</h4>
-              <div class="rating-section__container">
-                <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
-                <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐ </label>
-                <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-                <label><input type="radio" name="rating" value="0" checked> All Ratings</label>
-              </div>
-            </div>
-
-            <button>Apply changes</button>
-            <button>Reset</button>
+            <input type="range" id="price-slider" min="1000" max="50000" value="10000"
+              oninput="amount.value = this.value">
+            <output id="amount">10000</output>
           </div>
 
-        </div>
-      </div>
-      <div class="travel-bg">
-        <img src="./images/travel-bg.jpg" alt="travel-bg">
-      </div>
+          <div class="rating-section">
+            <h4>Minimum Rating</h4>
+            <div class="rating-section__container">
+              <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+              <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐ </label>
+              <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+              <label><input type="radio" name="rating" value="0" checked> All Ratings</label>
+            </div>
+          </div>
 
+          <button>Apply changes</button>
+          <button>Reset</button>
+        </div>
+
+      </div>
     </div>
-  </header>
+    <div class="travel-bg">
+      <img src="./images/travel-bg.jpg" alt="travel-bg">
+    </div>
+
+  </div>
 
   <main>
     <!-- Destinations -->
