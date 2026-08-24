@@ -245,6 +245,16 @@ body {
 .search .travel-bg img {
   width: 100%;
   height: 400px;
+  position: relative;
+}
+
+.travel-caption {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  right: 10%;
+  padding: 2%;
+  font-size: 24px;
 }
 
 
@@ -361,4 +371,10 @@ body {
     flex-basis: 50%;
   }
 
+  .travel-caption {
+    width: 60%;
+    font-size: 16px;
+    bottom: 0;
+    right: 0;
+  }
 }
